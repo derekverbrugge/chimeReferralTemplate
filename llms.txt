@@ -1,0 +1,5 @@
+# chimeReferralTemplate
+
+- [Get $100 with Chime | Derek's Referral](https://derekverbrugge.github.io/chimeReferralTemplate/)
+
+[Full text](https://derekverbrugge.github.io/chimeReferralTemplate/llms-full.txt)

@@ -16,10 +16,10 @@
 @media(min-width:800px){.theme-portrait{float:right;margin:0 0 20px 32px}}
 @media(max-width:799px){.theme-portrait{float:none;width:min(80vw,340px)}}
 </style>
-</head>
+<style>a,a:visited,a:hover,a:active,a:focus{text-decoration:none!important}body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}#site-footer{margin-top:auto}#site-header{display:contents}</style></head>
 
 <body>
-  <header class="site-header">
+  <div id="site-header"><header class="site-header">
     <div class="wrap header-row">
       <a class="wordmark" href="index.html#top" aria-label="Chime referral home">
         chime<span>®</span>
@@ -31,7 +31,7 @@
         Get $100 ↗
       </a>
     </div>
-  </header>
+  </header></div>
 
   <main id="top">
 
@@ -248,7 +248,7 @@
   </main>
 
   <!-- DISCLOSURES -->
-  <footer id="terms"><div class="wrap"><a href="index.html#top">Back to homepage</a></div>
+  <div id="site-footer"><footer id="terms"><div class="wrap"><a href="index.html#top">Back to homepage</a></div>
     <div class="wrap">
       <p class="disclosure">
         <strong>Independent referral disclosure:</strong>
@@ -280,9 +280,9 @@
           Chime® is a trademark of its respective owner.
           Used here to identify the referred service.
         </span>
-        <span>Independent referral page · <span id="year"></span></span>
+        <span>Independent referral page · © <span id="year"></span></span>
       </div>
     </div>
-  </footer>
-</body>
+  <nav class="wrap" aria-label="Footer navigation"><a href="https://www.chime.com/r/derekverbrugge/?c=s" target="_blank" rel="noopener noreferrer sponsored">Get $100</a></nav><p style="font-size:.75rem;text-align:center"><a href="https://www.DerekVerbrugge.com">Designed by Derek Verbrugge</a></p></footer></div>
+<script>Promise.all([["site-header","header.html"],["site-footer","footer.html"]].map(async ([id,path])=>{try{const r=await fetch(path);if(r.ok)document.getElementById(id).innerHTML=await r.text()}catch{}})).then(()=>{const y=document.getElementById("year");if(y)y.textContent=new Date().getFullYear()});</script></body>
 </html>
